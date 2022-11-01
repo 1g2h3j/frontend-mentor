@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(30, 38%, 92%);
+      }
+      .img-rounded {
+        border-radius: 9px 0 0 9px;
+      }
+      .head-title {
+        font-size: 12px;
+        margin-bottom: 15px;
+        font-family: "Montserrat";
+        letter-spacing: 0.3rem;
+        color: hsl(228, 12%, 48%);
+      }
+      .title {
+        margin-bottom: -8px;
+        letter-spacing: -0px;
+        font-family: "Fraunces";
+      }
+      p {
+        font-size: 14px;
+        padding: 1rem 0.3rem 1rem 0;
+        color: hsl(228, 12%, 48%);
+        font-family: "Montserrat";
+      }
+      .price {
+        font-size: 1.85rem;
+        color: hsl(158, 36%, 37%);
+        font-family: "Fraunces";
+      }
+      .card-body {
+        padding: 2rem 2rem 0 2rem;
+      }
+      .button {
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+        padding: 0.7rem;
+        text-decoration: none;
+        background-color: hsl(158, 36%, 37%);
+      }
+      .button:hover {
+        color: white;
+        padding: 0.7rem;
+        text-decoration: none;
+        background-color: hsl(212, 21%, 14%);
+      }
+      .price-trough {
+        font-family: "Poppins";
+        font-size: 14px;
+        padding-left: 1.5rem;
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex flex-row justify-content-center mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3 border-0 rounded-3" style="max-width: 600px">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="images/image-product-desktop.jpg" class="img-fluid img-rounded" alt="..." />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column gap-2">
+                  <h6 class="card-title head-title">PERFUME</h6>
+                  <div class="">
+                    <h2 class="card-text title">Gabrielle</h2>
+                    <h2 class="card-text title">Essence Eau</h2>
+                    <h2 class="card-text title">De Parfum</h2>
+                  </div>
+
+                  <p class="card-text text-muted pb-2">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                  <div class="row align-items-center mb-2">
+                    <h3 class="col-6 pe-0 price">$149.99</h3>
+                    <h6 class="col-6 price-trough">$169.99</h6>
+                  </div>
+
+                  <a class="button d-flex align-items-center justify-content-center gap-2 mb-1 rounded-3"><img src="/images/icon-cart.svg" width="15" alt="" />Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Affan Maulana</a>.</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  </body>
+</html>
